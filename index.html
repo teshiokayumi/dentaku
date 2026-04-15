@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>キャラクター電卓</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="mode-selector">
+                <button id="purchase-mode" class="mode-btn active">購入モード</button>
+                <button id="change-mode" class="mode-btn">おつりモード</button>
+            </div>
+            <div class="display">
+                <input type="text" id="calc-display" readonly>
+            </div>
+            <div class="buttons">
+                <button class="btn number" data-value="7">7</button>
+                <button class="btn number" data-value="8">8</button>
+                <button class="btn number" data-value="9">9</button>
+                <button class="btn operator" data-value="/">÷</button>
+                <button class="btn number" data-value="4">4</button>
+                <button class="btn number" data-value="5">5</button>
+                <button class="btn number" data-value="6">6</button>
+                <button class="btn operator" data-value="*">×</button>
+                <button class="btn number" data-value="1">1</button>
+                <button class="btn number" data-value="2">2</button>
+                <button class="btn number" data-value="3">3</button>
+                <button class="btn operator" data-value="-">-</button>
+                <button class="btn number" data-value="0">0</button>
+                <button class="btn clear">C</button>
+                <button class="btn equals">=</button>
+                <button class="btn operator" data-value="+">+</button>
+            </div>
+        </div>
+        <div class="right-panel">
+            <img src="dentaku.png" alt="電卓イラスト" class="illustration">
+            <div class="message">
+                <p id="total-message">合計 <span id="total-amount">0</span> 円です</p>
+                <p id="change-message" style="display: none;">おつりは <span id="change-amount">0</span> 円です</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
